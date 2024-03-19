@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+<section class="body">
+    <table cellspacing="50">
+      <tbody class="table-header">
+        <tr class="table-head">
+          <th class="tableHeader">Rank</th>
+          <th class="tableHeader">Name</th>
+          <th class="tableHeader">Symbol</th>
+          <th class="tableHeader">Price USD</th>
+          <th class="tableHeader">Amount</th>
+          <th class="tableHeader">Portfolio Value</th>
+        </tr>
+        <% coins.forEach(function(c) { %>
+             <tr class="table-row">
+                <td><%= c.rank %> </td>
+                <td><%= c.name %> </td>
+                <td><%= c.symbol %> </td>
+                <td>$<%= c.price_usd %> </td>
+                <td><%= c.amount %> </td>
+                <td><%= c.rank %> </td>
+                <td><%= c.value %> </td>
+                <td><a href="/coins/<%= c._id %>"></a>Favorite</td>
+            </tr>
+        <% }) %>
+
+<%- include('../partials/footer') %>
