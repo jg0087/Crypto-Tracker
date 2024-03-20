@@ -1,0 +1,69 @@
+<%- include('../partials/header') %>
+
+    <section id=" 'favorite-page">
+        <br>
+        <div>Name: </div>
+        <div>
+            <%= coin.name %>
+        </div>
+        <br>
+        <div>Symbol: </div>
+        <div>
+            <%= coin.symbol %>
+        </div>
+        <br>
+        <div>Price: </div>
+        <div>
+            <%= coin.price_usd %>
+        </div>
+        <br>
+        <div>Amount: </div>
+        <div>
+            <%= coin.amount %>
+        </div>
+        <br>
+        <div>Value: </div>
+        <div>
+            <%= coin.value %>
+        </div>
+
+    </section>
+
+    <br><br>
+    <br><br><h2>Coin info</h2>
+<form id="add-info-form" method="POST"
+  action="/coins/<%= coin._id %>/infos">
+  <label>info:</label>
+  <textarea name="content"></textarea>
+  <label>Buying Price:</label>
+  <textarea name="buying"></textarea>
+  <label>Selling Price:</label>
+  <textarea name="selling"></textarea>
+  <br>
+  
+  <input type="submit" value="Add Info">
+</form>
+
+<% if (coin.infos) { %>
+    <table>
+      <thead>
+        <tr class="table-row">
+          <th>Info</th>
+          <th>Buying Price</th>
+          <th>Selling Price</th>
+        </tr>
+      </thead>
+      <tbody>
+            <% coin.infos.forEach(function(c) { %>
+                <tr class="table-row">
+                    <td><%= c.content %></td>
+                    <td><%= c.buying %></td>
+                    <td><%= c.selling %></td>
+                </tr>
+            <% }); %>
+      </tbody>
+    </table>
+<% } else { %>
+    <h5>N/A</h5>
+<% } %>
+<%- include('../partials/footer') %>

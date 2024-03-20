@@ -4,12 +4,21 @@ module.exports = {
     create,
     new: newCoin,
     index,
-    show
+    show,
+    delete: deleteCoin
+    
 }
+function deleteCoin(req, res) {
+    Coin.deleteOne(req.params.id)
+    res.redirect('/coins')
+
+
+}
+
 async function show(req, res) {
     const coin = await Coin.findById(req.params.id)
     res.render('coins/show', {
-        title: 'Favorie',
+        title: 'Info',
         coin
     })
 

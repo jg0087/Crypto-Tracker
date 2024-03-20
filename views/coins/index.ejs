@@ -17,9 +17,12 @@
                 <td><%= c.symbol %> </td>
                 <td>$<%= c.price_usd %> </td>
                 <td><%= c.amount %> </td>
-                <td><%= c.rank %> </td>
-                <td><%= c.value %> </td>
-                <td><a href="/coins/<%= c._id %>"></a>Favorite</td>
+                <td><%= c.price_usd*c.amount %> </td>
+                <td><a href="/coins/<%= c._id %>">Info</a></td>
+                <td>
+                    <form action="/coins/<%= c.id %>?_method=DELETE" method="POST" class="delete-form">
+                    <button type="submit">Delete</button>
+                </form></td>
             </tr>
         <% }) %>
 
