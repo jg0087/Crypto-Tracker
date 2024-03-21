@@ -5,11 +5,32 @@ module.exports = {
     new: newCoin,
     index,
     show,
-    delete: deleteCoin
+    delete: deleteCoin,
+    edit: editCoin,
+    update
     
 }
-function deleteCoin(req, res) {
-    Coin.deleteOne(req.params.id)
+async function update(req, res) {
+    console.log('update')
+    console.log(req.params.id)
+    const coin = await Coin.findOneAndUpdate({_id:req.params.id}, req.body, {new: true})
+    console.log('coin', coin)
+    // await coin.updateOne(req.body, { new: true })
+    res.redirect('/coins')
+
+}
+
+
+async function editCoin(req, res) {
+    const coin = await Coin.findById(req.params.id)
+    res.render('coins/edit', {
+        coin: coin,
+        title: 'Edit coin',
+        errorMsg: ''
+    })
+}
+async function deleteCoin(req, res) {
+    await Coin.findByIdAndDelete(req.params.id)
     res.redirect('/coins')
 
 
@@ -36,6 +57,7 @@ function newCoin(req, res) {
     })
 }
 async function create(req, res) {
+    console.log('create')
     await Coin.create(req.body)
     res.redirect('coins')
 }

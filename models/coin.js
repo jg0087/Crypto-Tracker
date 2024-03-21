@@ -2,14 +2,6 @@ const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema
 
-module.exports = {
-    deleteOne
-}
-function deleteOne(id) {
-    id = parseInt(id)
-    const idx = coins.findIndex(coin => coin.id === id)
-    coins.splice(idx, 1)
-}
 
 const infosSchema = new Schema ({
     content: {

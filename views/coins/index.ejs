@@ -1,8 +1,8 @@
 <%- include('../partials/header') %>
-<section class="body">
+<section>
     <table cellspacing="50">
-      <tbody class="table-header">
-        <tr class="table-head">
+      <tbody class="tableHeader">
+        <tr class="tableHeader">
           <th class="tableHeader">Rank</th>
           <th class="tableHeader">Name</th>
           <th class="tableHeader">Symbol</th>
@@ -11,7 +11,7 @@
           <th class="tableHeader">Portfolio Value</th>
         </tr>
         <% coins.forEach(function(c) { %>
-             <tr class="table-row">
+             <tr class="tableHeader">
                 <td><%= c.rank %> </td>
                 <td><%= c.name %> </td>
                 <td><%= c.symbol %> </td>
@@ -19,6 +19,9 @@
                 <td><%= c.amount %> </td>
                 <td><%= c.price_usd*c.amount %> </td>
                 <td><a href="/coins/<%= c._id %>">Info</a></td>
+                <td>
+                <a href="/coins/<%= c._id %>/edit">Edit</a> 
+                </td>
                 <td>
                     <form action="/coins/<%= c.id %>?_method=DELETE" method="POST" class="delete-form">
                     <button type="submit">Delete</button>

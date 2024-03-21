@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-    <section id=" 'favorite-page">
+    <section id="form">
         <br>
         <div>Name: </div>
         <div>
@@ -24,14 +24,14 @@
         <br>
         <div>Value: </div>
         <div>
-            <%= coin.value %>
+            <%= coin.price_usd*coin.amount %>
         </div>
 
     </section>
 
     <br><br>
     <br><br><h2>Coin info</h2>
-<form id="add-info-form" method="POST"
+<form id="form" method="POST"
   action="/coins/<%= coin._id %>/infos">
   <label>info:</label>
   <textarea name="content"></textarea>
@@ -45,9 +45,9 @@
 </form>
 
 <% if (coin.infos) { %>
-    <table>
+    <table cellspacing="100" >
       <thead>
-        <tr class="table-row">
+        <tr>
           <th>Info</th>
           <th>Buying Price</th>
           <th>Selling Price</th>
@@ -55,7 +55,7 @@
       </thead>
       <tbody>
             <% coin.infos.forEach(function(c) { %>
-                <tr class="table-row">
+                <tr>
                     <td><%= c.content %></td>
                     <td><%= c.buying %></td>
                     <td><%= c.selling %></td>
