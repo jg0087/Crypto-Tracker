@@ -1,5 +1,5 @@
 # Crypto Tracking APP
-Enable users to add, update, delete and track their cryptocurrency holdings by entering transaction details. Each coin has an info page with data about the coin, selling and buying price. 
+My app enables users to add, update, delete and track their cryptocurrency holdings by entering transaction details. Each coin has an info page with data about the coin, selling and buying price. 
 
 # Screenshot
 
@@ -17,11 +17,12 @@ Enable users to add, update, delete and track their cryptocurrency holdings by e
 - CSS
 
 # Getting Started
-
-https://jg0087.github.io/Crypto-Tracker/
+- Deployed App : https://trello.com/b/PvBjdFq5/crypto-portfolio-tracker-project-2
+- Trello: https://trello.com/b/PvBjdFq5/crypto-portfolio-tracker-project-2
+- Github: https://jg0087.github.io/Crypto-Tracker/
 
 # Next Steps
 
 - Add API for live prices.
 - Mark favorite coins and populate them into a new page.
-- Create a lastest news page with information about the market.
+- Create a live news page with information about the market.
