@@ -1,15 +1,10 @@
 # Crypto Tracking APP
-<img src="<img width="736" alt="Screenshot 2024-03-21 at 9 50 01 PM (2)" src="https://github.com/jg0087/Crypto-Tracker/assets/73007013/0ee9e666-1285-4b48-a61f-adf19f3f5fe7">
-
-
-
+<img src="![360_F_168784673_f3PBHRNvpi7EPGUHUvXfXvuS95hWELbk](https://github.com/jg0087/Crypto-Tracker/assets/73007013/2802afd1-d076-43ec-a852-cf56aeab92f1)
+">
 
 My app enables users to add, update, delete and track their cryptocurrency holdings by entering transaction details. Each coin has an info page with data about the coin, selling and buying price. 
 
 # Screenshot
-
-
-<img src="">
 
 # Technologies Used
 
@@ -31,3 +26,5 @@ My app enables users to add, update, delete and track their cryptocurrency holdi
 - Add API for live prices.
 - Mark favorite coins and populate them into a new page.
 - Create a live news page with information about the market.
+
+"<img width="736" alt="Screenshot 2024-03-21 at 9 50 01 PM (2)" src="https://github.com/jg0087/Crypto-Tracker/assets/73007013/0ee9e666-1285-4b48-a61f-adf19f3f5fe7">
