@@ -1,9 +1,11 @@
 # Crypto Tracking APP
+<img src="<img width="445" alt="Screenshot 2024-03-21 at 9 51 13 PM (2)" src="https://github.com/jg0087/Crypto-Tracker/assets/73007013/8aca8914-8c6b-47a3-82c7-2db66626dabc">
+">
 My app enables users to add, update, delete and track their cryptocurrency holdings by entering transaction details. Each coin has an info page with data about the coin, selling and buying price. 
 
 # Screenshot
 
-<img src="">
+
 <img src="">
 
 # Technologies Used
