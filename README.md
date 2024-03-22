@@ -1,6 +1,7 @@
 # Crypto Tracking APP
-<img src="![360_F_168784673_f3PBHRNvpi7EPGUHUvXfXvuS95hWELbk](https://github.com/jg0087/Crypto-Tracker/assets/73007013/2802afd1-d076-43ec-a852-cf56aeab92f1)
-">
+![360_F_168784673_f3PBHRNvpi7EPGUHUvXfXvuS95hWELbk](https://github.com/jg0087/Crypto-Tracker/assets/73007013/8ab2e09d-38d3-49db-b9a5-cff1edd6196f)
+
+
 
 My app enables users to add, update, delete and track their cryptocurrency holdings by entering transaction details. Each coin has an info page with data about the coin, selling and buying price. 
 
