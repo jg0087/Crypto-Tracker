@@ -12,6 +12,7 @@ My app enables users to add, update, delete and track their cryptocurrency holdi
 # Technologies Used
 
 - Express.js
+- Heroku
 - Mongo DB
 - Mongoose
 - CRUD
@@ -20,7 +21,7 @@ My app enables users to add, update, delete and track their cryptocurrency holdi
 - CSS
 
 # Getting Started
-- Deployed App : https://trello.com/b/PvBjdFq5/crypto-portfolio-tracker-project-2
+- Deployed App : https://crypto-portfolio-app-fa78d9bcf47e.herokuapp.com/coins
 - Trello: https://trello.com/b/PvBjdFq5/crypto-portfolio-tracker-project-2
 - Github: https://jg0087.github.io/Crypto-Tracker/
 
