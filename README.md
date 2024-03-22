@@ -30,5 +30,6 @@ My app enables users to add, update, delete and track their cryptocurrency holdi
 - Add API for live prices.
 - Mark favorite coins and populate them into a new page.
 - Create a live news page with information about the market.
+- Oath
 
 "<img width="736" alt="Screenshot 2024-03-21 at 9 50 01 PM (2)" src="https://github.com/jg0087/Crypto-Tracker/assets/73007013/0ee9e666-1285-4b48-a61f-adf19f3f5fe7">
